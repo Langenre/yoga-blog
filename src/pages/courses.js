@@ -13,14 +13,14 @@ export default function Component (props) {
             <Hero title="Kurse" />
             <div className={styles.container}>
                 <span className={styles.meta}>
-                    Ersetze negative Gedanken durch ein positives Ziel
+                    Om Namah Shivaya Gurave
                 </span>
                 <div className={styles.article}>
                     <div
                     className={styles.body}
                     >
                         <p>Die ersten Kurse folgen in 2022</p>
-                        <p>Mein Plan ist [...]</p>
+                        <p>Mein Plan ist es [...]</p>
                     </div>
                 </div>
             </div>
