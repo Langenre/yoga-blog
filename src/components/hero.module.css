@@ -3,7 +3,7 @@
   display: flex;
   margin: 0 auto;
   max-width: var(--size-max-width);
-  min-height: 180px;
+  min-height: 120px;
   padding: 0 0 var(--size-gutter);
   position: relative;
 }
@@ -50,6 +50,7 @@
 @media (min-width: 768px) {
   .hero {
     padding-top: var(--size-gutter);
+    min-height: 170px;
   }
 
   .details {

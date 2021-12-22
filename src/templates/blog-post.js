@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
 import Seo from '../components/seo'
@@ -12,8 +12,6 @@ import Commento from '../components/commento'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
-    const previous = get(this.props, 'data.previous')
-    const next = get(this.props, 'data.next')
 
     return (
       <Layout location={this.props.location}>
@@ -40,26 +38,6 @@ class BlogPostTemplate extends React.Component {
               }}
             />
             <Tags tags={post.tags} />
-            {(previous || next) && (
-              <nav>
-                <ul className={styles.articleNavigation}>
-                  {previous && (
-                    <li>
-                      <Link to={`/blog/${previous.slug}`} rel="prev">
-                        ← {previous.title}
-                      </Link>
-                    </li>
-                  )}
-                  {next && (
-                    <li>
-                      <Link to={`/blog/${next.slug}`} rel="next">
-                        {next.title} →
-                      </Link>
-                    </li>
-                  )}
-                </ul>
-              </nav>
-            )}
             <Commento id={post.title} />
           </div>
         </div>
