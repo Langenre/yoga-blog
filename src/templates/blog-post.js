@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Tags from '../components/tags'
 import * as styles from './blog-post.module.css'
+import Commento from '../components/commento'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -59,6 +60,7 @@ class BlogPostTemplate extends React.Component {
                 </ul>
               </nav>
             )}
+            <Commento id={post.title} />
           </div>
         </div>
       </Layout>
