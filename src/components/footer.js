@@ -6,7 +6,7 @@ import * as styles from './footer.module.css'
 const Footer = () => (
   <Container as="footer">
     <div className={styles.container}>
-      Technische Umsetzung: Rene Langenberger
+      Technische Umsetzung durch Rene Langenberger
     </div>
   </Container>
 )

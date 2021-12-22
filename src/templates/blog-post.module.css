@@ -11,7 +11,11 @@
 }
 
 .container {
-  margin-top: var(--size-gutter);
+  margin-top: var(--space-3xl);
+}
+
+.pager {
+  margin-bottom: var(--space-xl);
 }
 
 .article {
@@ -78,6 +82,11 @@
   .container {
     max-width: var(--size-max-width);
     margin: var(--space-3xl) auto 0;
+  }
+
+  .pager {
+    max-width: var(--size-max-width);
+    margin: var(--space-xl) auto 0;
   }
 
   .article {

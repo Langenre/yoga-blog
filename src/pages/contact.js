@@ -11,7 +11,7 @@ export default function Component (props) {
         <Layout location={props.location}>
             <Seo title="Contact" />
             <Hero title="Kontakt" />
-            <div className={styles.container}>
+            <div className={styles.pager}>
                 <span className={styles.meta}>
                     Wer die anderen als Weise erkennt, wird sich selbst als Erleuchtet wissen
                 </span>

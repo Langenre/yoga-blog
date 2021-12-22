@@ -4,7 +4,7 @@
   margin: 0 auto;
   max-width: var(--size-max-width);
   min-height: 130px;
-  padding: var(--size-gutter) 0;
+  padding: var(--size-gutter) 0 0;
   position: relative;
 }
 

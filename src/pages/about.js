@@ -11,7 +11,7 @@ export default function Component (props) {
         <Layout location={props.location}>
             <Seo title="About me" />
             <Hero title="Laura von Harten" />
-            <div className={styles.container}>
+            <div className={styles.pager}>
                 <span className={styles.meta}>
                     Om Shanti Om
                 </span>
