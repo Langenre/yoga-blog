@@ -7,8 +7,11 @@
   padding-bottom: var(--size-gutter);
   padding-left: var(--size-gutter);
   position: relative;
-  top: -1em;
   display: block;
+}
+
+.container {
+  margin-top: var(--size-gutter);
 }
 
 .article {
@@ -74,7 +77,7 @@
 @media (min-width: 768px) {
   .container {
     max-width: var(--size-max-width);
-    margin: 0 auto;
+    margin: var(--space-3xl) auto 0;
   }
 
   .article {

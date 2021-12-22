@@ -1,10 +1,10 @@
 .hero {
-  align-items: flex-end;
+  align-items: flex-start;
   display: flex;
   margin: 0 auto;
   max-width: var(--size-max-width);
-  min-height: 140px;
-  padding: 0 0 var(--space-3xl);
+  min-height: 130px;
+  padding: var(--size-gutter) 0;
   position: relative;
 }
 
@@ -23,7 +23,7 @@
   left: 0;
   max-width: 40rem;
   width: 85%;
-  padding: 0 var(--space-2xl) 0;
+  padding: 0 var(--size-gutter) 0;
   position: absolute;
 }
 
@@ -50,7 +50,6 @@
 @media (min-width: 768px) {
   .hero {
     padding-top: var(--size-gutter);
-    min-height: 170px;
   }
 
   .details {
