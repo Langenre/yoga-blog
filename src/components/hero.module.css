@@ -3,8 +3,8 @@
   display: flex;
   margin: 0 auto;
   max-width: var(--size-max-width);
-  min-height: 120px;
-  padding: 0 0 var(--size-gutter);
+  min-height: 140px;
+  padding: 0 0 var(--space-3xl);
   position: relative;
 }
 
