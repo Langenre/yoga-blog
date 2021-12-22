@@ -43,7 +43,7 @@
 
 @media (min-width: 480px) {
   .details {
-    padding-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
   }
 }
 
