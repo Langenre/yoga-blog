@@ -22,7 +22,6 @@ class BlogPostTemplate extends React.Component {
           image={`http:${post.heroImage.resize.src}`}
         />
         <Hero
-          image={post.heroImage?.gatsbyImageData}
           title={post.title}
           content={post.description?.childMarkdownRemark?.excerpt}
         />
