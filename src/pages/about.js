@@ -20,10 +20,11 @@ export default function Component (props) {
                     className={styles.body}
                     >
                         <p>Namasté</p>
-                        <p>Ich bin Laura, komme aus Braunschweig und absolviere zurzeit meine Ausbildung zur Yogalehrerin (BYV) im Seminarhaus Bad Meinberg (Yoga Vidya).</p>
+                        <p>Ich bin Laura und habe mich auf die Reise zur Yogalehrerin begeben. Voraussichtlich werde ich im Janaur meine Ausbildung (BYV) im Seminarhaus Bad Meinberg abschließen.</p>
                         <p>Für mich ist Yoga [...]</p>
                         <p>Die Faszination für [...] lasse ich in meine persönliche Yogaübungspraxis einfließen.</p>
                         <p>Mein Leitgedanke ist [...]</p>
+                        <p>Meinen Schülern möchte ich [...] mitgeben.</p>
                     </div>
                 </div>
             </div>
