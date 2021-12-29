@@ -50,7 +50,7 @@
 
   /* tokens */
   /* colors */
-  --primary: #4a90e2;
+  --primary: rgb(230, 0, 103);
   --background: #f8f8f8;
   --border: var(--black-fade-5);
 
