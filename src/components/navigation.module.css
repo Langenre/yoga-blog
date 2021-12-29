@@ -1,10 +1,10 @@
 .container {
   display: flex;
-  justify-content: space-between;
-  max-width: var(--size-max-width);
   align-items: center;
-  margin: 0 auto;
-  padding: var(--space-2xl) var(--size-gutter);
+  justify-content: center;
+  margin: 0;
+  padding: var(--space-2xl) 0;
+  background-color: var(--white);
 }
 
 .navigation {
@@ -18,6 +18,8 @@
   display: inline-flex;
   align-items: center;
   flex-direction: row;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .navigationItem a {

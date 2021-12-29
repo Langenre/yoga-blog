@@ -1,13 +1,15 @@
 import React from 'react'
 
-import Container from './container'
 import * as styles from './footer.module.css'
 
 const Footer = () => (
-  <Container as="footer">
-    <div className={styles.container}>
+    <div className={styles.footer}>
+      <ul className={styles.footerList}>
+        <li className={styles.footerItem}>Impressum</li>
+        <li className={styles.footerItem}>Datenschutz</li>
+        <li className={styles.footerItem}>Kontakt</li>
+      </ul>
     </div>
-  </Container>
 )
 
 export default Footer

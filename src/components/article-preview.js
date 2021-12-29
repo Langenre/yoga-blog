@@ -18,7 +18,11 @@ const ArticlePreview = ({ posts }) => {
             <li key={post.slug}>
               <Link to={`/blog/${post.slug}`} className={styles.link}>
                 <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} />
-                <h2 className={styles.title}>{post.title}</h2>
+              </Link>
+              <div className={styles.articlePreview}>
+              <Link to={`/blog/${post.slug}`} className={styles.link}>
+
+              <h2 className={styles.title}>{post.title}</h2>
               </Link>
               <div
                 dangerouslySetInnerHTML={{
@@ -28,6 +32,7 @@ const ArticlePreview = ({ posts }) => {
               <div className={styles.meta}>
                 <small className="meta">{post.publishDate}</small>
                 <Tags tags={post.tags} />
+              </div>
               </div>
             </li>
           )

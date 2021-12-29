@@ -7,9 +7,20 @@
   grid-gap: var(--space-3xl);
 }
 
+.article-list li {
+  background-color: var(--white);
+}
+
+.article-list .articlePreview {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .title {
   display: inline-block;
-  font-size: var(--text-lg);
+  font-size: var(--text-2xl);
   margin-bottom: var(--space-xs);
   margin-top: var(--space-lg);
   border-bottom: 1.5px solid transparent;
@@ -26,4 +37,9 @@
 .meta {
   display: flex;
   justify-content: space-between;
+  color: #777777;
+}
+
+.articlePreview > div {
+  color: #777777;
 }
