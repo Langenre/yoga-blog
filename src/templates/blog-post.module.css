@@ -9,7 +9,7 @@
 }
 
 .container {
-  margin: 150px auto 0;
+  margin: var(--size-gutter) auto 0;
 }
 
 .article {
@@ -75,7 +75,7 @@
 @media (min-width: 768px) {
   .container {
     max-width: var(--size-max-width);
-    margin: 150px auto 0;
+    margin: var(--size-gutter) auto 0;
   }
 
   .pager {

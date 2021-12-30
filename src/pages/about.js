@@ -2,15 +2,15 @@ import * as React from "react"
 
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
 import * as styles from '../templates/blog-post.module.css'
+import PageHeader from '../components/page-header'
 
 
 export default function Component (props) {
     return (
         <Layout location={props.location}>
             <Seo title="About me" />
-            <Hero title="Laura von Harten" />
+            <PageHeader title="Laura von Harten" />
             <div className={styles.pager}>
                 <span className={styles.meta}>
                     Om Shanti Om

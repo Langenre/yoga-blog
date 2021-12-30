@@ -1,0 +1,16 @@
+.header {
+    align-items: flex-start;
+    display: flex;
+    margin: var(--size-gutter) auto;
+    max-width: var(--size-max-width);
+    min-height: 130px;
+    padding: var(--size-gutter) 0 0;
+    justify-content: center;
+}
+
+.title {
+    font-size: var(--text-title);
+    font-weight: var(--bold);
+    line-height: var(--dense);
+    margin: 0 0 var(--space-xl);
+}

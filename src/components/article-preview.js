@@ -21,7 +21,6 @@ const ArticlePreview = ({ posts }) => {
               </Link>
               <div className={styles.articlePreview}>
               <Link to={`/blog/${post.slug}`} className={styles.link}>
-
               <h2 className={styles.title}>{post.title}</h2>
               </Link>
               <div
