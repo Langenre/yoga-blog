@@ -2,20 +2,14 @@
   font-family: var(--font-sans);
   font-size: var(--text-lg);
   margin: 0 auto 1em;
-  max-width: var(--size-max-width);
   padding-bottom: var(--size-gutter);
   padding-left: var(--size-gutter);
-  position: relative;
-  display: block;
   color: #777777;
+  top: -1em;
 }
 
 .container {
-  margin-top: var(--space-3xl);
-}
-
-.pager {
-  margin-bottom: var(--space-xl);
+  margin: 150px auto 0;
 }
 
 .article {
@@ -81,7 +75,7 @@
 @media (min-width: 768px) {
   .container {
     max-width: var(--size-max-width);
-    margin: var(--space-3xl) auto 0;
+    margin: 150px auto 0;
   }
 
   .pager {
@@ -97,7 +91,6 @@
 @media (min-width: 1024px) {
   .article {
     gap: var(--space-3xl);
-    margin: 0 var(--size-gutter) 0 auto;
     padding-left: 0;
     padding-right: 0;
     width: calc(85% - var(--size-gutter));

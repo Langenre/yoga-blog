@@ -25,10 +25,6 @@ class BlogPostTemplate extends React.Component {
           content={post.description?.childMarkdownRemark?.excerpt}
         />
         <div className={styles.container}>
-          <span className={styles.meta}>
-            {post.author?.name} &middot;{' '}
-            <time dateTime={post.rawDate}>{post.publishDate}</time>
-                      </span>
           <div className={styles.article}>
             <div
               className={styles.body}
