@@ -4,8 +4,8 @@ import get from 'lodash/get'
 
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import ArticlePreview from '../components/article-preview'
-import PageHeader from '../components/page-header'
+import BlogPostPreview from '../components/blog-post-preview/blog-post-preview'
+import PageHeader from '../components/page-header/page-header'
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location}>
         <Seo title="Blog" />
         <PageHeader title="Blog" />
-        <ArticlePreview posts={posts} />
+        <BlogPostPreview posts={posts} />
       </Layout>
     )
   }

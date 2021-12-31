@@ -1,47 +1,23 @@
-.meta {
-  font-family: var(--font-sans);
-  font-size: var(--text-lg);
-  margin: 0 auto 1em;
-  padding-bottom: var(--size-gutter);
-  padding-left: var(--size-gutter);
-  color: #777777;
-  top: -1em;
-}
-
-.container {
-  margin: var(--size-gutter) auto 0;
-}
+/* -----------Layout----------- */
 
 .article {
   display: grid;
-  font-size: var(--text-prose);
-  gap: var(--space-xl);
-  letter-spacing: var(--text-prose-tracking);
-  line-height: var(--loose);
-  padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
+  width: 100vw;
+  justify-content: center;
+  margin-top: var(--size-gutter);
 }
 
 .body {
+  padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
   max-width: 48rem;
 }
 
-.article h2:first-of-type {
-  margin-top: 0;
-}
+/* -----------Text----------- */
 
-.article a {
-  border-bottom: 1.5px solid currentColor;
-  font-weight: var(--medium);
-}
-
-.article a:hover {
-  border-bottom-color: transparent;
-  color: var(--primary);
-}
-
-.article p {
-  margin-bottom: 1.5em;
-  margin-top: 0;
+.article {
+  font-size: var(--text-prose);
+  letter-spacing: var(--text-prose-tracking);
+  line-height: var(--loose);
 }
 
 .article h1,
@@ -64,39 +40,25 @@
   margin-bottom: 0.5em;
 }
 
-.articleNavigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
+.article li::marker  {
+  color: var(--black);
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: var(--size-max-width);
-    margin: var(--size-gutter) auto 0;
-  }
-
-  .pager {
-    max-width: var(--size-max-width);
-    margin: var(--space-xl) auto 0;
-  }
-
-  .article {
-    gap: var(--space-xl);
-  }
+.article h2:first-of-type {
+  margin-top: 0;
 }
 
-@media (min-width: 1024px) {
-  .article {
-    gap: var(--space-3xl);
-    padding-left: 0;
-    padding-right: 0;
-    width: calc(85% - var(--size-gutter));
-  }
+.article a {
+  border-bottom: 1.5px solid currentColor;
+  font-weight: var(--medium);
+}
 
-  .article ul {
-    padding-left: 0;
-  }
+.article a:hover {
+  border-bottom-color: transparent;
+  color: var(--primary);
+}
+
+.article p {
+  margin-bottom: 1.5em;
+  margin-top: 0;
 }

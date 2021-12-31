@@ -4,10 +4,10 @@ import get from 'lodash/get'
 
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
-import Tags from '../components/tags'
+import BlogPostHeader from '../components/blog-post-header/blog-post-header'
+import Tags from '../components/tags/tags'
 import * as styles from './blog-post.module.css'
-import Commento from '../components/commento'
+import Commento from '../components/commento/commento'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,22 +20,20 @@ class BlogPostTemplate extends React.Component {
           description={post.description.childMarkdownRemark.excerpt}
           image={`http:${post.heroImage.resize.src}`}
         />
-        <Hero
+        <BlogPostHeader
           image={post.heroImage?.gatsbyImageData}
           title={post.title}
           content={post.description?.childMarkdownRemark?.excerpt}
         />
-        <div className={styles.container}>
-          <div className={styles.article}>
-            <div
-              className={styles.body}
-              dangerouslySetInnerHTML={{
-                __html: post.body?.childMarkdownRemark?.html,
-              }}
-            />
-            <Tags tags={post.tags} />
-            <Commento id={post.title} />
-          </div>
+        <div className={styles.article}>
+          <div
+            className={styles.body}
+            dangerouslySetInnerHTML={{
+              __html: post.body?.childMarkdownRemark?.html,
+            }}
+          />
+          <Tags tags={post.tags} />
+          <Commento id={post.title} />
         </div>
       </Layout>
     )
