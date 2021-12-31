@@ -2,14 +2,15 @@
 
 .article {
   display: grid;
-  width: 100vw;
   justify-content: center;
-  margin-top: var(--size-gutter);
+  width: 100%;
+  margin-bottom: calc(var(--size-gutter) * 2);
+  padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
 }
 
 .body {
-  padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
   max-width: 48rem;
+  margin-bottom: calc(var(--size-gutter) * 2);
 }
 
 /* -----------Text----------- */

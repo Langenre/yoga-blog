@@ -29,7 +29,6 @@
 }
 
 .navigationItem a:hover {
-  border-bottom-color: var(--primary);
   color: var(--primary);
 }
 

@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import * as styles from './blog-post-header.module.css'
 
 const BlogPostHeader = ({ image, title, content }) => (
-  <div className={styles.hero}>
+  <div className={styles.header}>
     {image && (
       <GatsbyImage className={styles.image} alt={title} image={image} />
     )}

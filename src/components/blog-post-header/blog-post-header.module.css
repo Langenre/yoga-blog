@@ -1,7 +1,8 @@
-.hero {
+.header {
   align-items: flex-start;
+  flex-direction: column;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto var(--size-gutter);
   max-width: var(--size-max-width);
   min-height: 130px;
   padding: var(--size-gutter) 0 0;
@@ -11,21 +12,11 @@
 }
 
 .image {
-  /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
   max-height: 600px;
-  width: 100vw !important;
   height: 100%;
 }
 
 .details {
-  position: absolute;
-  width: 800px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: var(--size-gutter);
   background-color: var(--white);
   text-align: center;
@@ -44,19 +35,27 @@
   color: #777;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .details {
     padding-top: var(--space-2xl);
+    position: relative;
+  }
+  .image {
+    width: 100vw !important
   }
 }
 
 @media (min-width: 768px) {
-  .hero {
-    padding-top: var(--size-gutter);
-  }
-
   .details {
     padding: var(--space-3xl) var(--size-gutter);
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image {
+    width: var(--size-max-width) !important;
   }
 }
 
@@ -65,5 +64,6 @@
     margin-left: auto;
     width: 85%;
   }
-  
 }
+
+
