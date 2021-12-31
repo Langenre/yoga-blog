@@ -12,9 +12,6 @@ export default function Component (props) {
             <Seo title="Contact" />
             <PageHeader title="Kontakt" />
             <div className={styles.pager}>
-                <span className={styles.meta}>
-                    Wer die anderen als Weise erkennt, wird sich selbst als Erleuchtet wissen
-                </span>
                 <div className={styles.article}>
                     <div
                     className={styles.body}

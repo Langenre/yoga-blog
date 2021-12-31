@@ -12,9 +12,6 @@ export default function Component (props) {
             <Seo title="About me" />
             <PageHeader title="Kurse" />
             <div className={styles.pager}>
-                <span className={styles.meta}>
-                    Om Namah Shivaya Gurave
-                </span>
                 <div className={styles.article}>
                     <div
                     className={styles.body}

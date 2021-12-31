@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    margin: var(--size-gutter) auto;
+    margin: var(--space-lg) auto;
     max-width: var(--size-max-width);
     justify-content: center;
     align-content: center;

@@ -12,9 +12,6 @@ export default function Component (props) {
             <Seo title="About me" />
             <PageHeader title="Laura von Harten" />
             <div className={styles.pager}>
-                <span className={styles.meta}>
-                    Om Shanti Om
-                </span>
                 <div className={styles.article}>
                     <div
                     className={styles.body}
