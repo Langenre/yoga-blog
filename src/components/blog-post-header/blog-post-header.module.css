@@ -1,23 +1,24 @@
 .header {
-  align-items: flex-start;
-  flex-direction: column;
-  display: flex;
-  margin: 0 auto var(--size-gutter);
-  max-width: var(--size-max-width);
-  min-height: 130px;
-  padding: var(--size-gutter) 0 0;
   position: relative;
+  display: flex;
   justify-content: center;
   align-content: center;
+
+  max-width: 60vw;
+  min-height: 130px;
+  margin: 0 auto var(--size-gutter);
+  padding: var(--size-gutter) 0 0;
 }
 
 .image {
+  margin: 0;
   max-height: 600px;
   height: 100%;
 }
 
 .details {
   padding: var(--size-gutter);
+  max-width: 48rem;
   background-color: var(--white);
   text-align: center;
 }
