@@ -10,14 +10,7 @@ const BlogPostPreview = ({ posts }) => {
   if (!Array.isArray(posts)) return null
 
   return (
-    <div
-      style={{
-        maxWidth: 'var(--size-max-width)',
-        minHeight: '75vh',
-        margin: '0 auto',
-        padding: 'var(--space-2xl) var(--size-gutter)',
-      }}
-    >
+    <div className={styles.container}>
       <ul className={styles.articleList}>
         {posts.map((post) => {
           return (
