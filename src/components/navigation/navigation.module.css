@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-shadow: 0 0 30px rgba(0,0,0,.05);
 
   margin: 0;
   padding: var(--space-2xl) var(--space-3xl);

@@ -15,7 +15,9 @@
 
 .article-list li {
   background-color: var(--white);
+  box-shadow: 0 0 30px rgba(0,0,0,.05);
 }
+
 
 .article-list .articlePreview {
   padding-top: 10px;
@@ -39,9 +41,5 @@
 .meta {
   display: flex;
   justify-content: space-between;
-  color: #777777;
-}
-
-.articlePreview > div {
   color: #777777;
 }

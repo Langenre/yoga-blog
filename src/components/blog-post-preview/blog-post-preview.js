@@ -26,6 +26,7 @@ const BlogPostPreview = ({ posts }) => {
                 dangerouslySetInnerHTML={{
                   __html: post.description.childMarkdownRemark.html,
                 }}
+                className={styles.description}
               />
               <div className={styles.meta}>
                 <small className="meta">{post.publishDate}</small>

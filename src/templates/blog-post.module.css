@@ -18,12 +18,14 @@
 
 .article {
   font-size: var(--text-prose);
+  font-family: var(--font-serif);
   letter-spacing: var(--text-prose-tracking);
   line-height: var(--loose);
 }
 
 .article h1,
 .article h2 {
+  font-family: var(--font-sans);
   font-size: var(--text-2xl);
   margin-top: var(--space-3xl);
 }
@@ -32,6 +34,7 @@
 .article h4,
 .article h5,
 .article h6 {
+  font-family: var(--font-sans);
   font-size: var(--text-prose);
   font-weight: var(--semibold);
   margin-bottom: 0.5em;

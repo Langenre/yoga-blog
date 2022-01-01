@@ -1,10 +1,8 @@
 :root {
   /* primitives */
   /* font-family */
-  --font-sans: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
-  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
-  --font-serif: 'Times New Roman', Times, serif;
+  --font-sans: "Franklin ITC", sans-serif;
+  --font-serif: Georgia, Times, Times New Roman, serif;
 
   /* palette */
   --white: #fff;
@@ -50,13 +48,13 @@
 
   /* tokens */
   /* colors */
-  --primary: #777;
+  --primary: #2455c3;
   --background: #f8f8f8;
   --border: var(--black-fade-5);
 
   /* text */
   /* color */
-  --text-color: var(--black);
+  --text-color: #222;
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);
