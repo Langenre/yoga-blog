@@ -4,14 +4,14 @@
   justify-content: center;
   align-content: center;
 
-  max-width: 60vw;
   min-height: 130px;
   margin: 0 auto var(--size-gutter);
-  padding: var(--size-gutter) 0 0;
 }
 
 .image {
+  object-fit: cover;
   margin: 0;
+  width: 100%;
   max-height: 600px;
   height: 100%;
 }
@@ -54,16 +54,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .image {
-    width: var(--size-max-width) !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .image {
-    margin-left: auto;
-    width: 85%;
   }
 }
 
