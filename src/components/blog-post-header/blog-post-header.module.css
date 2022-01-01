@@ -17,6 +17,7 @@
 }
 
 .details {
+  padding: var(--size-gutter);
   max-width: 54rem;
   background-color: var(--white);
   text-align: center;
@@ -39,8 +40,8 @@
     padding-top: var(--space-2xl);
     position: relative;
   }
-  .image {
-    width: 100vw !important
+  .header {
+    flex-direction: column;
   }
 }
 

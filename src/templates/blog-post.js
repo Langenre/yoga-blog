@@ -8,11 +8,14 @@ import BlogPostHeader from '../components/blog-post-header/blog-post-header'
 import Tags from '../components/tags/tags'
 import * as styles from './blog-post.module.css'
 import Commento from '../components/commento/commento'
+import Link from 'gatsby-link'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
-
+    const previous = get(this.props, 'data.previous')
+    const next = get(this.props, 'data.next')
+    
     return (
       <Layout location={this.props.location}>
         <Seo
@@ -23,7 +26,9 @@ class BlogPostTemplate extends React.Component {
         <BlogPostHeader
           image={post.heroImage?.gatsbyImageData}
           title={post.title}
-          content={post.description?.childMarkdownRemark?.excerpt}
+          author={post.author?.name}
+          date={post.rawDate}
+          timeToRead={post.body?.childMarkdownRemark?.timeToRead}
         />
         <div className={styles.article}>
           <div
@@ -34,6 +39,26 @@ class BlogPostTemplate extends React.Component {
           />
           <Tags tags={post.tags} />
           <Commento id={post.title} />
+          {(previous || next) && (
+            <nav>
+              <ul className={styles.articleNavigation}>
+                {previous && (
+                  <li>
+                    <Link to={`/blog/${previous.slug}`} rel="prev">
+                      ← {previous.title}
+                    </Link>
+                  </li>
+                )}
+                {next && (
+                  <li>
+                    <Link to={`/blog/${next.slug}`} rel="next">
+                      {next.title} →
+                    </Link>
+                  </li>
+                )}
+              </ul>
+            </nav>
+          )}
         </div>
       </Layout>
     )
