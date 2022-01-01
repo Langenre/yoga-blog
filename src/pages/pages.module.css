@@ -1,0 +1,67 @@
+/* -----------Layout----------- */
+
+.article {
+    display: grid;
+    min-height: 75vh;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: calc(var(--size-gutter) * 2);
+    padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
+}
+
+.body {
+    min-width: 40vw;
+    max-width: 48rem;
+    margin-bottom: calc(var(--size-gutter) * 2);
+}
+
+/* -----------Text----------- */
+
+.article {
+    font-size: var(--text-prose);
+    letter-spacing: var(--text-prose-tracking);
+    line-height: var(--loose);
+}
+
+.article h1,
+.article h2 {
+    font-size: var(--text-2xl);
+    margin-top: var(--space-3xl);
+}
+
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+    font-size: var(--text-prose);
+    font-weight: var(--semibold);
+    margin-bottom: 0.5em;
+    margin-top: 3em;
+}
+
+.article li {
+    margin-bottom: 0.5em;
+}
+
+.article li::marker  {
+    color: var(--black);
+}
+
+.article h2:first-of-type {
+    margin-top: 0;
+}
+
+.article a {
+    border-bottom: 1.5px solid currentColor;
+    font-weight: var(--medium);
+}
+
+.article a:hover {
+    border-bottom-color: transparent;
+    color: var(--primary);
+}
+
+.article p {
+    margin-bottom: 1.5em;
+    margin-top: 0;
+}

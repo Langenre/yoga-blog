@@ -2,6 +2,7 @@
 
 .article {
   display: grid;
+  min-height: 75vh;
   justify-content: center;
   width: 100%;
   margin-bottom: calc(var(--size-gutter) * 2);

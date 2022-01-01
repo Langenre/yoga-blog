@@ -4,25 +4,17 @@ import * as styles from './footer.module.css'
 import { Link } from 'gatsby'
 
 const Footer = () => (
-    <div className={styles.footer}>
-      <ul className={styles.footerList}>
-        <li className={styles.footerItem}>
-          <Link to='/impressum/' activeClassName='active'>
-            Impressum
-          </Link>
-        </li>
-        <li className={styles.footerItem}>
-          <Link to='/datenschutz/' activeClassName='active'>
-            Datenschutz
-          </Link>
-        </li>
-        <li className={styles.footerItem}>
-          <Link to='/kontakt/' activeClassName='active'>
-            Kontakt
-          </Link>
-        </li>
-      </ul>
-    </div>
+  <div className={styles.footer}>
+    <Link to='/impressum/' activeClassName='active' className={styles.footerItem}>
+      Impressum
+    </Link>
+    <Link to='/datenschutz/' activeClassName='active' className={styles.footerItem}>
+      Datenschutz
+    </Link>
+    <Link to='/kontakt/' activeClassName='active' className={styles.footerItem}>
+      Kontakt
+    </Link>
+  </div>
 )
 
 export default Footer

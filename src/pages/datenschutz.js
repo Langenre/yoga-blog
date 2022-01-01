@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import * as styles from '../templates/blog-post.module.css'
+import * as styles from './pages.module.css'
 import PageHeader from '../components/page-header/page-header'
 
 

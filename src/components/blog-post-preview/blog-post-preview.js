@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
-import Container from './container'
 import Tags from '../tags/tags'
 import * as styles from './blog-post-preview.module.css'
 
@@ -11,7 +10,14 @@ const BlogPostPreview = ({ posts }) => {
   if (!Array.isArray(posts)) return null
 
   return (
-    <Container>
+    <div
+      style={{
+        maxWidth: 'var(--size-max-width)',
+        minHeight: '75vh',
+        margin: '0 auto',
+        padding: 'var(--space-2xl) var(--size-gutter)',
+      }}
+    >
       <ul className={styles.articleList}>
         {posts.map((post) => {
           return (
@@ -37,7 +43,7 @@ const BlogPostPreview = ({ posts }) => {
           )
         })}
       </ul>
-    </Container>
+    </div>
   )
 }
 
