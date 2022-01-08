@@ -19,20 +19,23 @@ const BlogPostPreview = ({ posts }) => {
                 <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} />
               </Link>
               <div className={styles.articlePreview}>
+              <div className={styles.meta}>
+                <Tags tags={post.tags} />
+              </div>
               <Link to={`/blog/${post.slug}`} className={styles.link}>
               <h2 className={styles.title}>{post.title}</h2>
+
               </Link>
+                <small className={styles.meta}>{post.publishDate}</small>
               <div
                 dangerouslySetInnerHTML={{
                   __html: post.description.childMarkdownRemark.html,
                 }}
                 className={styles.description}
               />
-              <div className={styles.meta}>
-                <small className="meta">{post.publishDate}</small>
-                <Tags tags={post.tags} />
+              <small className={styles.readmore}>READ MORE</small>
               </div>
-              </div>
+
             </li>
           )
         })}
@@ -41,4 +44,4 @@ const BlogPostPreview = ({ posts }) => {
   )
 }
 
-export default BlogPostPreview
+export default BlogPostPreview;

@@ -1,11 +1,13 @@
 .tags {
   display: flex;
-  gap: var(--space-md);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
 }
 
 .tag {
-  background-color: var(--black-fade-5);
-  border-radius: var(--radius-sm);
-  line-height: var(--solid);
+  color: #df747f;
   padding: var(--space-sm) var(--space-md);
 }

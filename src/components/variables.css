@@ -4,11 +4,6 @@
   --font-sans: "Franklin ITC", sans-serif;
   --font-serif: Georgia, Times, Times New Roman, serif;
 
-  /* palette */
-  --white: #fff;
-  --black: #000;
-  --black-fade-5: rgba(0, 0, 0, 0.05);
-
   /* radii */
   --radius-sm: 4px;
 
@@ -48,13 +43,35 @@
 
   /* tokens */
   /* colors */
-  --primary: #2455c3;
-  --background: #f8f8f8;
+  --primary: #d6eed7;
+  --secondary: #a1c7ba;
+  --light: #f8f8f8;
+  --highlight: #f5ab87;
+  --highlight-dark: #ea525f;
+  --background: #ecf6f3;
+  --text-color: rgb(67, 80, 89);
+  --text-color-light: #777;
+  --white: #fff;
+  --black: #000;
+  --black-fade-5: rgba(234, 82, 95, 0.5);
+
   --border: var(--black-fade-5);
 
+
+       /**
+  #b6d8c0
+  #6faf9f
+  #d6eed7
+
+  #81b5a9
+
+  #f77d5c
+  #fcd7a2
+  #f5ab87
+  **/
+     
   /* text */
   /* color */
-  --text-color: #222;
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);

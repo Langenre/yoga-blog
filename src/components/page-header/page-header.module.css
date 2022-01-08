@@ -10,4 +10,5 @@
     font-size: var(--text-title);
     font-weight: var(--bold);
     line-height: var(--dense);
+    font-family: SansSerif;
 }

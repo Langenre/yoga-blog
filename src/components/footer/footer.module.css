@@ -1,15 +1,29 @@
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  justify-content: center;
+  height: 140px;
+  margin-top: calc(var(--space-xl)*2);
+  
+  background-color: #a1c7ba;
+  font-size: 38px;
+  font-family: SansSerif;
+}
+
 .footer {
   display: flex;
   align-items: center;
   gap: var(--space-xl);
   justify-content: center;
-  height: 70px;
-  box-shadow: 0 0 30px rgba(0,0,0,.05);
+  height: 80px;
 
   margin: 0;
   padding: var(--space-2xl) var(--space-3xl);
-  background-color: rgb(36, 36, 36);
-  color: white;
+  background-color: #81b5a9;
+  color: #d6eed7;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .footerItem a {
@@ -17,7 +31,3 @@
   font-weight: var(--medium);
 }
 
-.footerItem a:hover {
-  border-bottom-color: var(--primary);
-  color: var(--primary);
-}
