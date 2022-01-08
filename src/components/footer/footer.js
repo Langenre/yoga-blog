@@ -7,6 +7,9 @@ const Footer = () => (
   <>
     <div className={styles.newsletter}>
       Newsletter
+      <div className={styles.action}>
+        <input />
+      </div>
     </div>
     <div className={styles.footer}>
       <Link to='/impressum/' activeClassName='active' className={styles.footerItem}>

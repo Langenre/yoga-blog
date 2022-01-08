@@ -1,10 +1,10 @@
 .newsletter {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--space-xl);
   justify-content: center;
-  height: 140px;
-  margin-top: calc(var(--space-xl)*2);
+  height: 240px;
+  margin-top: calc(var(--space-xl)*4);
   
   background-color: #a1c7ba;
   font-size: 38px;
@@ -16,12 +16,12 @@
   align-items: center;
   gap: var(--space-xl);
   justify-content: center;
-  height: 80px;
+  height: 100px;
 
   margin: 0;
   padding: var(--space-2xl) var(--space-3xl);
-  background-color: #81b5a9;
-  color: #d6eed7;
+  color: #333;
+  background-color: #d6eed7;
   letter-spacing: 1px;
   font-weight: bold;
 }

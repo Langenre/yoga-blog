@@ -49,7 +49,7 @@
   --highlight: #f5ab87;
   --highlight-dark: #ea525f;
   --background: #ecf6f3;
-  --text-color: rgb(67, 80, 89);
+  --text-color: #333;
   --text-color-light: #777;
   --white: #fff;
   --black: #000;
@@ -75,7 +75,7 @@
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);
-  --text-title: var(--text-3xl);
+  --text-title: var(--text-4xl);
   /* tracking */
   --text-prose-tracking: -0.011em;
 

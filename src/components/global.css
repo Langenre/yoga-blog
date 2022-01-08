@@ -6,8 +6,18 @@ html * {
   box-sizing: border-box;
 }
 
+
+
 body {
-  background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(236,246,243,1) 80%, rgba(214,238,215,1) 100%);
+  background: rgba(236,246,243,1);
+  background-image: radial-gradient(at 40% 20%, #f8f8f8 0, transparent 50%),
+  radial-gradient(at 80% 0%, rgba(236,246,243,1) 0, transparent 50%),
+  radial-gradient(at 0% 50%, #ecf6f3 0, transparent 50%),
+  radial-gradient(at 80% 50%, #e8f5e9 0, transparent 50%),
+  radial-gradient(at 0% 100%, #d6eed7 0, transparent 50%),
+  radial-gradient(at 80% 100%, rgba(236,246,243,1) 0, transparent 50%),
+  radial-gradient(at 0% 0%, #e8f5e9 0, transparent 50%);
+
   font-family: var(--font-sans);
   font-size: 14px;
   font-weight: var(--body);
@@ -15,6 +25,7 @@ body {
   margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
 }
 
 main {
