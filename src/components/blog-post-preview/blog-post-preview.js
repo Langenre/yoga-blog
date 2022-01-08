@@ -33,7 +33,7 @@ const BlogPostPreview = ({ posts }) => {
                 }}
                 className={styles.description}
               />
-              <small className={styles.readmore}>READ MORE</small>
+              <small className={styles.readmore}>Read more</small>
               </div>
 
             </li>
