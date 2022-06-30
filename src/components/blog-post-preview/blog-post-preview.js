@@ -16,24 +16,25 @@ const BlogPostPreview = ({ posts }) => {
           return (
             <li key={post.slug}>
               <Link to={`/blog/${post.slug}`} className={styles.link}>
-                <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} />
+                <GatsbyImage alt='' image={post.heroImage.gatsbyImageData} />
               </Link>
               <div className={styles.articlePreview}>
-              <div className={styles.meta}>
-                <Tags tags={post.tags} />
-              </div>
-              <Link to={`/blog/${post.slug}`} className={styles.link}>
-              <h2 className={styles.title}>{post.title}</h2>
-
-              </Link>
+                <div className={styles.meta}>
+                  <Tags tags={post.tags} />
+                </div>
+                <Link to={`/blog/${post.slug}`} className={styles.link}>
+                  <h2 className={styles.title}>{post.title}</h2>
+                </Link>
                 <small className={styles.meta}>{post.publishDate}</small>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: post.description.childMarkdownRemark.html,
-                }}
-                className={styles.description}
-              />
-              <small className={styles.readmore}>Read more</small>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: post.description.childMarkdownRemark.html,
+                  }}
+                  className={styles.description}
+                />
+                <Link to={`/blog/${post.slug}`} className={styles.link}>
+                  <small className={styles.readmore}>Read more</small>
+                </Link>
               </div>
 
             </li>
@@ -44,4 +45,4 @@ const BlogPostPreview = ({ posts }) => {
   )
 }
 
-export default BlogPostPreview;
+export default BlogPostPreview
