@@ -27,7 +27,7 @@ class Courses extends React.Component {
                               <h1>{course.title}</h1>
                               <div
                                 dangerouslySetInnerHTML={{
-                                  __html: post.description.childMarkdownRemark.html,
+                                  __html: course.description.childMarkdownRemark.html,
                                 }}
                               />
                             </div>
