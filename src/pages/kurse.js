@@ -25,7 +25,11 @@ class Courses extends React.Component {
                           {courses.map(course => (
                             <div>
                               <h1>{course.title}</h1>
-                              <p>{course.description}</p>
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: post.description.childMarkdownRemark.html,
+                                }}
+                              />
                             </div>
                           ))}
                       </div>
@@ -43,7 +47,11 @@ export const pageQuery = graphql`
     allContentfulCourses(sort: { fields: [title], order: DESC}) {
       nodes {
         title
-        description
+        description {
+          childMarkdownRemark {
+            html
+          }
+        }
       }
     }
   }
