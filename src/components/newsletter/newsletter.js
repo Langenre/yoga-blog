@@ -6,22 +6,25 @@ const Newsletter = () => {
   const [ email, setEmail ] = useState("");
   const [ isSubscribed, setIsSubscribed ] = useState(false);
   
-  const submit = async (email) => {
-    e.preventDefault();
-    const result = await addToMailchimp(email);
+  const submit = async (event) => {
+    event.preventDefault();
+    addToMailchimp(email);
     setIsSubscribed(true);
   }
 
   return (
     <div>
-      <form onSubmit={submit(email)}>
+      <form onSubmit={submit}>
         {isSubscribed ?
-          <input
-            type="email"
-            onChange={event => setEmail(event.target.value)}
-            placeholder="email"
-            name="email"
-          />
+          <>
+            <input
+              type="email"
+              onChange={event => setEmail(event.target.value)}
+              placeholder="email"
+              name="email"
+            />
+            <button>Abbonieren</button>
+          </>
           :
           <p>Erfolgreich abonniert!</p>
         }
