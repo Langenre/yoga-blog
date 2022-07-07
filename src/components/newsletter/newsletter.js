@@ -25,7 +25,8 @@ const Newsletter = () => {
               placeholder='email'
               name='email'
             />
-            <input type="submit" />Abbonieren</>
+            <button type="submit" >Abbonieren</button>
+          </>
         }
       </form>
     </div>
