@@ -26,11 +26,11 @@ export default function Component (props) {
                         <p> 2022 schloss ich schließlich meine Ausbildung zur Hatha-Yoga Lehrerin bei Yoga Vidya ab. So kann ich das, was ich auf der Matte erleben durfte, auch andere erleben lassen. </p>
                          <p> Ich glaube nämlich, dass wir viel mehr Yogis in dieser Welt brauchen und Achtsamkeit nicht nur zu innerem sondern auch äußerem Frieden führen kann. </p>   
                            <p> Darum möchte ich  auch dir die Vielseitigkeit und Heilsamkeit von Yoga zeigen. </p>
-                        <P> In meinen Stunden lasse ich darum immer wieder kleine philosophische Impulse einfließen. Außerdem lege ich viel Wert auf Ausgeglichenheit zwischen Bewegung und Entspannung. </p>
-                        <P> So möchte ich Yoga möglichst ganzheitlich vermitteln.</p>
+                        <p> In meinen Stunden lasse ich darum immer wieder kleine philosophische Impulse einfließen. Außerdem lege ich viel Wert auf Ausgeglichenheit zwischen Bewegung und Entspannung. </p>
+                        <p> So möchte ich Yoga möglichst ganzheitlich vermitteln.</p>
 
                         <p> Ich freue mich, wenn ich dich bald in einer meiner Stunden begrüßen darf. </p>
-                        <P> Schaue gerne in mein Kursangebot oder kontaktiere mich jederzeit, wenn du Fragen hast.</p>
+                        <p> Schaue gerne in mein Kursangebot oder kontaktiere mich jederzeit, wenn du Fragen hast.</p>
                         <p> Ich freue mich auf dich! </p>
                            
     ´                    
