@@ -50,5 +50,12 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://gmail.us13.list-manage.com/subscribe/post?u=f22d15b82d753643b7810ca54&amp;id=ad80056bc3',
+        timeout: 3500,
+      },
+    },
   ],
 };
