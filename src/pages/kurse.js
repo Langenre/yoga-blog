@@ -21,7 +21,7 @@ class Courses extends React.Component {
                       <div
                       className={styles.body}
                       >
-                          <p>Die ersten Kurse folgen in 2022</p>
+                          <p>Meine Kurse finden in Braunschweig und Umgebung statt. Zusätzlich zu den wöchentlich stattfindenden Kursen biete ich auch Specials und Workshops an, die du ebenfalls hier finden kannst. </p>
                           {courses.map(course => (
                             <div>
                               <h1>{course.title}</h1>
