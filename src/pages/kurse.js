@@ -22,6 +22,7 @@ class Courses extends React.Component {
                       className={styles.body}
                       >
                           <p>Meine Kurse finden in Braunschweig und Umgebung statt. Zusätzlich zu den wöchentlich stattfindenden Kursen biete ich auch Specials und Workshops an, die du ebenfalls hier finden kannst. </p>
+                          <p> Falls du Fragen hast, oder dich für einen Kurs anmelden möchtest, kannst du mir gerne jederzeit eine E-Mail schreiben. </p>
                           {courses.map(course => (
                             <div>
                               <h1>{course.title}</h1>
