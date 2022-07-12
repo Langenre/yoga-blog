@@ -17,7 +17,7 @@ const Navigation = () => (
         </a>
     </div>
     <div className={styles.navigation}>
-          <Link to='/' activeClassName='active' className={styles.navigationItem}>
+        <Link to='/' activeClassName='active' className={styles.navigationItem}>
           Startseite
         </Link>
        <Link to='/kurse/' activeClassName='active' className={styles.navigationItem}>
@@ -26,14 +26,12 @@ const Navigation = () => (
         <Link to='/' activeClassName='active' className={styles.navigationItem}>
           Blog
         </Link>
-  
-        </Link>
-        <Link to='/about/' activeClassName='active' className={styles.navigationItem}>
+          <Link to='/about/' activeClassName='active' className={styles.navigationItem}>
           Über mich
         </Link>
       <Link to='/kontakt/' activeClassName='active' className={styles.navigationItem}>
           Kontakt
-       
+      </Link>
     </div>
     <div className={styles.search}>
         <img src={SearchLogo} alt='Search Logo' />
