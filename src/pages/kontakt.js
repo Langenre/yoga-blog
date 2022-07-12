@@ -16,8 +16,8 @@ export default function Component (props) {
                     <div
                     className={styles.body}
                     >
-                        <p>Falls ihr zu Themen mehr erfahren, oder euch austauschen wollt, kommt gerne auf mich zu. Ich möchte an euren Erfahrungen teilhaben.</p>
-                        <p>Vorallem interessieren mich [...]</p>
+                        <p>Hast du Fragen oder Wünsche? .</p>
+                        <p>Melde dich gerne und wir schauen gemeinsam, was für dich stimmig sein könnte.</p>
                     </div>
                 </div>
             </div>
