@@ -17,18 +17,20 @@ const Navigation = () => (
         </a>
     </div>
     <div className={styles.navigation}>
+       <Link to='/kurse/' activeClassName='active' className={styles.navigationItem}>
+          Mein Angebot
+        </Link>
         <Link to='/' activeClassName='active' className={styles.navigationItem}>
           Blog
+        </Link>
+  <Link to='/kontakt/' activeClassName='active' className={styles.navigationItem}>
+          Kontakt
         </Link>
         <Link to='/about/' activeClassName='active' className={styles.navigationItem}>
           Über mich
         </Link>
-        <Link to='/kontakt/' activeClassName='active' className={styles.navigationItem}>
-          Kontakt
-        </Link>
-        <Link to='/kurse/' activeClassName='active' className={styles.navigationItem}>
-          Kurse
-        </Link>
+      
+       
     </div>
     <div className={styles.search}>
         <img src={SearchLogo} alt='Search Logo' />
