@@ -10,13 +10,13 @@ export default function Component (props) {
     return (
         <Layout location={props.location}>
             <Seo title="About me" />
-            <PageHeader title="Laura von Harten" />
+            <PageHeader title="About" />
             <div className={styles.pager}>
                 <div className={styles.article}>
                     <div
                     className={styles.body}
                     >
-                        <p>Namasté</p>
+                       <p> Namasté </p>
                         <p> Schön, dass du da bist!</p>
                         
                         <p>Mein Name ist Laura und ich praktiziere seit 2018 regelmäßig Yoga. Meine Yogareise begann auf Youtube, als ich nach einer Trennung mit Videos von Mady Morrison meinem Körper etwas Gutes tun wollte </p>
