@@ -14,8 +14,8 @@ class Courses extends React.Component {
 
     return (
           <Layout location={this.props.location}>
-              <Seo title="About me" />
-              <PageHeader title="Kurse" />
+              <Seo title="Yogakurse Braunschweig" />
+              <PageHeader title="Mein Angebot" />
               <div className={styles.pager}>
                   <div className={styles.article}>
                       <div
