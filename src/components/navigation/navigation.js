@@ -23,13 +23,13 @@ const Navigation = () => (
         <Link to='/' activeClassName='active' className={styles.navigationItem}>
           Blog
         </Link>
-  <Link to='/kontakt/' activeClassName='active' className={styles.navigationItem}>
-          Kontakt
+  
         </Link>
         <Link to='/about/' activeClassName='active' className={styles.navigationItem}>
           Über mich
         </Link>
-      
+      <Link to='/kontakt/' activeClassName='active' className={styles.navigationItem}>
+          Kontakt
        
     </div>
     <div className={styles.search}>
