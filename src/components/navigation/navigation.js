@@ -17,6 +17,9 @@ const Navigation = () => (
         </a>
     </div>
     <div className={styles.navigation}>
+          <Link to='/' activeClassName='active' className={styles.navigationItem}>
+          Startseite
+        </Link>
        <Link to='/kurse/' activeClassName='active' className={styles.navigationItem}>
           Mein Angebot
         </Link>
